@@ -5,6 +5,7 @@
 
 // two pointer technique!
 
+// ====== Brute force ===========
 const twoSums = (nums, target) => {
   for (let i = 0; i < nums.length; i++) {
     const numberToFind = target - nums[i];
@@ -22,6 +23,7 @@ const twoSums = (nums, target) => {
 // time-> O(n^2)
 // space -> O(1)
 
+// ========= Optimized ============
 const twoSums2 = (nums, target) => {
   const complementMap = {}; // store the complement of each number
   for (let i = 0; i < nums.length; i++) {
@@ -35,6 +37,8 @@ const twoSums2 = (nums, target) => {
     }
   }
 };
+// time-> O(n)
+// space -> O(n)
 
 
 console.log(twoSums2([1, 3, 7, 9, 2], 11));

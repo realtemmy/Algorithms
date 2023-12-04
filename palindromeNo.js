@@ -3,6 +3,9 @@
 
 // constraints: Could you solve without converting the integer to a string
 
+/* =============
+    Brute force
+================ */
 const isPalindrome = (x) => {
   x = x.toString();
   const word = x.split("");
