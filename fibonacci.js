@@ -5,4 +5,4 @@ const fibonacci = (n) => {
   }
   return fib
 };
-console.log(fibonacci(2)); // O(n)
+console.log(fibonacci(5)); // O(n)
