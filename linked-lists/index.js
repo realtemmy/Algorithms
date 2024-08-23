@@ -99,39 +99,7 @@ class LinkedList {
   }
 }
 
-class DoublyLinkedList {
-  constructor(value) {
-    (this.head = {
-      value: value,
-      prev: null,
-      next: null,
-    }),
-      (this.tail = this.head),
-      (this.length = 1);
-  }
-  append(value) {
-    const newNode = {
-      value: value,
-      prev: null,
-      next: null,
-    };
-    newNode.prev = this.tail;
-    this.tail.next = newNode;
-    this.tail = newNode;
-    this.length++;
-  }
-  prepend(value) {
-    const newNode = {
-      value: value,
-      next: null,
-      prev: null,
-    };
-    this.head.prev = newNode
-    newNode.next = this.head
-    this.head = newNode
-    this.length++
-  }
-}
+
 
 // const myLinkedLists = new DoublyLinkedList(10);
 const myLinkedLists = new LinkedList(10)

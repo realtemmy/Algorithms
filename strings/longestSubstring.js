@@ -1,26 +1,26 @@
-// const longestSubstring = (string) => {
-//   if (string.length <= 1) return s.length;
-//   let maxCount = 1;
-//   for (let i = 0; i < string.length; i++) {
-//     let uniqueCount = 1;
-//     let checked = [];
-//     for (let j = i + 1; j < string.length; j++) {
-//       if (string[i] !== string[j] && checked.indexOf(string[j]) === -1) {
-//         uniqueCount++;
-//         checked.push(string[j]);
-//         maxCount = Math.max(maxCount, uniqueCount);
-//       } else {
-//         break;
-//       }
-//     }
-//   }
-//   return maxCount;
-// };
+const longestSubstring = (string) => {
+  if (string.length <= 1) return s.length;
+  let maxCount = 1;
+  for (let i = 0; i < string.length; i++) {
+    let uniqueCount = 1;
+    let checked = [];
+    for (let j = i + 1; j < string.length; j++) {
+      if (string[i] !== string[j] && checked.indexOf(string[j]) === -1) {
+        uniqueCount++;
+        checked.push(string[j]);
+        maxCount = Math.max(maxCount, uniqueCount);
+      } else {
+        break;
+      }
+    }
+  }
+  return maxCount;
+};
 
-// time - O(n^3), space - O(n)
+time - O(n^3), space - O(n)
 
 // ====== OPTIMIZED ========== //
-const longestSubstring = (s) => {
+const longestSubstring2 = (s) => {
   if (s.length <= 1) return s.length;
   let left = 0,
     maxCount = 0,
