@@ -1,7 +1,7 @@
 // Given an integer array nums, return all the triplet [nums[i], nums[j], nums[k]]such that i != j, i!= k, j != k
 // and nums [i] + nums[j] + nums[k]
 
-const thereeSum = (nums) => {
+const threeSum = (nums) => {
   let sorted = nums.sort((a, b) => a - b);
   const result = [];
   for (let i = 0; i < sorted.length - 2; i++) {
@@ -40,7 +40,7 @@ const thereeSum = (nums) => {
 // };
 
 // console.log(thereeSum([-1, 0, 1, 2, -1, -4]));
-console.log(thereeSum([-1, 0, 1, 2, -1, -4])); //[[-1,-1,2],[-1,0,1]]
-console.log(thereeSum([0, 0, 0, 0])); //[0, 0, 0]
+console.log(threeSum([-1, 0, 1, 2, -1, -4])); //[[-1,-1,2],[-1,0,1]]
+console.log(threeSum([0, 0, 0, 0])); //[0, 0, 0]
 
 //  howtofree.org

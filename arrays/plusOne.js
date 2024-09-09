@@ -13,7 +13,6 @@ const plusOne1 = function (nums) {
 };
 
 // ========== Better way =================//
-
 const plusOne = function (nums) {
   for (let i = nums.length - 1; i >= 0; i--) {
     if (nums[i] < 9) {

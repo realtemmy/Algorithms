@@ -10,6 +10,5 @@ const reverseString = function (s) {
     left++
     right--
   }
-  console.log(s)
 };
 reverseString(["h", "e", "l", "l", "o"])

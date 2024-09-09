@@ -11,7 +11,6 @@ const twoSums = (nums, target) => {
     const numberToFind = target - nums[i];
     for (let j = i + 1; j < nums.length; j++) {
       if (numberToFind === nums[j]) {
-        // console.log(i, j);
         return [i, j];
       }
     }
@@ -39,6 +38,5 @@ const twoSums2 = (nums, target) => {
 };
 // time-> O(n)
 // space -> O(n)
-
 
 console.log(twoSums2([1, 3, 7, 9, 2], 11));

@@ -1,6 +1,6 @@
 // Given a string s, return the longest palindromic substring in s.
 
-// time - O(N^3), space - O(1)
+// time - O(N^2), space - O(1)
 const longestPalindrome = function (s) {
   let maxCount = 0;
   let longestString = "";

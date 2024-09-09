@@ -17,7 +17,7 @@ const longestSubstring = (string) => {
   return maxCount;
 };
 
-time - O(n^3), space - O(n)
+// time - O(n^3), space - O(n)
 
 // ====== OPTIMIZED ========== //
 const longestSubstring2 = (s) => {
