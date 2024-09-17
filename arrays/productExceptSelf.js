@@ -14,6 +14,8 @@ const productExceptSelf = function (nums) {
   return arr;
 };
 
+// ========== Optimized ============= //
+//  space - O(1), time - O(N)
 const productExceptSelf2 = function (nums) {
   let prefix = 1,
     postfix = 1,
