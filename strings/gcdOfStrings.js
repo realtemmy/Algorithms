@@ -28,3 +28,4 @@ var gcdOfStrings = function (str1, str2) {
 };
 
 console.log(gcdOfStrings("ABCABC", "ABC"));
+// Incorrect right now
